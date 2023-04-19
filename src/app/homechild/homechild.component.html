@@ -1,0 +1,14 @@
+<p>homechild works!</p>
+
+<!-- string interpolation  -->
+<p>{{ title }}</p>
+
+<!-- property interpolation -->
+<h1 [innerHTML]="content"></h1>
+
+<!-- two way binding -->
+<input [(ngModel)]="inputValue" #input />
+<!-- #input is a template reference variable, if want to access the value, then use ".value" -->
+
+<!-- template reference variable -->
+<button (click)="clickFuntion(input)">click</button>
